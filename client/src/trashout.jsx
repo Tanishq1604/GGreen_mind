@@ -1,7 +1,7 @@
 import Sidebar from './sidebar';
 import { mappls } from  'mappls-web-maps';
 function  Trashout() {
-const  styleMap  = {width:  '99%', height:  '99vh', display:'inline-block'}
+const  styleMap  = {width:  '600px', height:  '600px', display:'inline-block'}
 const  mapProps  = { center: [28.6330, 77.2194], traffic:  false, zoom:  4, geolocation:  false, clickableIcons:  false }
 var mapObject ;
 var mapplsClassObject=  new  mappls();
@@ -31,7 +31,7 @@ const data= [{lat:28.5512908, lng:77.2680928},{lat:29.5512908, lng:79.2680928},{
 
 
 return (
-<div>
+<div className='trashout'>
 	<Sidebar/>
 
 <div  id="map"  style={styleMap}></div>
