@@ -1,6 +1,6 @@
 import { useState } from "react"
 import axios from "axios";
-
+import Sidebar from "./sidebar.jsx";
 export default function Dashboard(){
 
     
@@ -41,36 +41,17 @@ export default function Dashboard(){
     
     }
     return(
-        <div className="container">  
-        <div className="card">
-            <div className="imgBx">
-                <img src="http://pngimg.com/uploads/running_shoes/running_shoes_PNG5782.png" alt="nike-air-shoe"/>
-            </div>
-
-            <div className="contentBx">
-
-                <h2>Nike Shoes</h2>
-
-                <div className="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-
-                <div className="color">
-
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a href="#" onClick={checkoutHandler}>Buy Now</a>
-            </div>
-            
-
+        <>
+        <Sidebar/>
+        <div className="dashboard-container">
+        {/* <div className="dashboard-profile-photo">
+            <label htmlFor="dashboard-profile-photo">
+                            <img src="" alt="" id="input-files-img" onChange={changeUrl}/>
+                        </label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="dashboard-profile-photo" />
+                <div className="dashboard-name">Name of user</div>
+            </div> */}
         </div>
-    </div>
+    </>
     )
 }

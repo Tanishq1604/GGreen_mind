@@ -18,10 +18,15 @@ export default function Sidebar(){
                 <div className="side-bar-name">Name of user</div>
             </div>
             <div className="side-bar-options">
-            <Link to="/dashboard" className="side-bar-btn">Dashboard</Link>
-            <Link to="/explore" className="side-bar-btn">Explore</Link>
-            <Link to="/trash" className="side-bar-btn">Trashout</Link>
+            <Link to="/dashboard" className="side-bar-btn"><i class="fa-solid fa-house"></i><div>Dashboard</div></Link>
+            <Link to="/explore" className="side-bar-btn"><i class="fa-regular fa-compass"></i><div>Explore</div></Link>
+            <Link to="/trash" className="side-bar-btn"><i class="fa-solid fa-trash"></i><div>Trashout</div></Link>
+            <Link to="/trash" className="side-bar-btn"><i class="fa-solid fa-gear"></i><div>Settings</div></Link>
                
+            </div>
+
+            <div className="upload-post">
+                <button className="upload-post-btn">Upload</button>
             </div>
         </div>
     )

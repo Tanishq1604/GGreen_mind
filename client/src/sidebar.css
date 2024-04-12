@@ -1,21 +1,26 @@
 .side-bar{
     width: 21.25rem;
-    height: 100vh;
-    background-color: #121212;
+    padding: 20px;
+    background-color: #d8ddd6;
     /* transform: translateX(-165%); */
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 40px;
+    top: 40px;
+    border-radius: 20px;
+    border: none;
 }
 
 .side-bar .side-bar-profile{
-    background-color: #121212;
+    background-color: #fff;
     height: 30%;
     padding: 1rem;
+    border-radius:20px ;
+    margin-bottom:8px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 label{
     height: 8rem;
@@ -34,16 +39,19 @@ label{
 }
 
 .side-bar-options{
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 20px;
 
 }
 .side-bar-name{
-    color: white;
+    color: black;
     font-family: 'Montaga', serif; 
 }
 .side-bar-options button{
@@ -60,7 +68,7 @@ label{
     height: 4rem;
     margin: 0;
     border-radius: 0;
-    color: white;
+    color: black;
     font-size: 25px;
     transform: translate(0,30px);
     
@@ -73,7 +81,51 @@ label{
 .side-bar-btn{
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    color: black;
     margin: 10px;
+    text-decoration: none;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.side-bar-btn:hover{
+    background-color: black ;
+    color: white;
+}
+
+ .side-bar-options .side-bar-btn i {
+    /* margin-right: 1rem ; */
+    opacity: 0.7;
+    position: absolute;
+    left: 20%;
+
+}
+
+.upload-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-post .upload-post-btn{
+    height: 4rem;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    transition: 0.5s ease;
+}
+.upload-post .upload-post-btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 
 }
