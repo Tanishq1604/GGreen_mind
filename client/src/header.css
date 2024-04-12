@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maitree:wght@200;300;400;500;600;700&family=Montaga&family=Oswald:wght@200..700&family=Poppins&family=Roboto:wght@300&family=Salsa&family=Tauri&family=Trade+Winds&display=swap'); */
+
+header{
+    width: 100%;
+    background-color: transparent;
+    /* padding: 0.5rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    height: 7rem;
+    width: 7rem;
+}
+
+header h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: green;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    right: 40%;
+
+    
+}
