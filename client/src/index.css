@@ -372,5 +372,10 @@ body {
     justify-content: space-around;
     
   }
+  #longitude{
+    z-index: 1;
+    height: 20px;
+    transform: translate(-15rem,);
+  }
 
   

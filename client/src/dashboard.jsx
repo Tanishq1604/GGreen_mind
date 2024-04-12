@@ -44,6 +44,24 @@ export default function Dashboard(){
         <>
         <Sidebar/>
         <div className="dashboard-container">
+            <div className="dashboard-profile-photo">
+                <label htmlFor="dashboard-new-photo">
+                    <img src="./images/user-png-icon-young-user-icon-2400.png" alt="" />
+                </label>
+            </div>
+            <div className="dashboard-container-name">
+                <h1>Name of the user : </h1>
+
+            </div>
+            <div className="dashboard-container-mail">
+                <h1>Gmail : </h1>
+            </div>
+            <div className="dashboard-container-location">
+                <h1>Location : </h1>
+            </div>
+            <div className="dashboard-container-posts">
+                <button>View All Post </button>
+            </div>
             
         {/* <div className="dashboard-profile-photo">
             <label htmlFor="dashboard-profile-photo">

@@ -1,7 +1,7 @@
 import Sidebar from './sidebar';
 import { mappls } from  'mappls-web-maps';
 function  Trashout() {
-const  styleMap  = {width:  '600px', height:  '600px', display:'inline-block'}
+const  styleMap  = {width:  '100%', height:  '100vh', display:'inline-block'}
 const  mapProps  = { center: [28.6330, 77.2194], traffic:  false, zoom:  4, geolocation:  false, clickableIcons:  false }
 var mapObject ;
 var mapplsClassObject=  new  mappls();
@@ -35,6 +35,8 @@ return (
 	<Sidebar/>
 
 <div  id="map"  style={styleMap}></div>
+  {/* <input type="text" placeholder='Enter logitude' id='longitude' /> */}
+
 </div>
 );
 }
