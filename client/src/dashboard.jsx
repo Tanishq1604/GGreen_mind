@@ -44,6 +44,7 @@ export default function Dashboard(){
         <>
         <Sidebar/>
         <div className="dashboard-container">
+            
         {/* <div className="dashboard-profile-photo">
             <label htmlFor="dashboard-profile-photo">
                             <img src="" alt="" id="input-files-img" onChange={changeUrl}/>

@@ -1,7 +1,8 @@
 
 import { mappls } from  'mappls-web-maps';
+import Sidebar from './sidebar';
 function  Trashout() {
-const  styleMap  = {width:  '60%', height:  '400px', display:'inline-block'}
+const  styleMap  = {width:  '60%', height:  '32rem', display:'inline-block',position : "relative", left : "31rem",borderRadius : "20px", zIndex : "0"}
 const  mapProps  = { center: [28.5512908, 77.26809282], traffic:  false, zoom:  4, geolocation:  false, clickableIcons:  false }
 var mapObject ;
 var mapplsClassObject=  new  mappls();
@@ -29,7 +30,11 @@ var mapplsClassObject=  new  mappls();
 
 return (
 <div>
-<div  id="map"  style={styleMap}></div>
+  <Sidebar/>
+<div  id="map"  style={styleMap}>
+
+</div>
+<i class="fa-solid fa-trash inside-map"></i>
 </div>
 );
 }

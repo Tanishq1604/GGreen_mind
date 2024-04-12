@@ -12,7 +12,7 @@ export default function Sidebar(){
         <div className="side-bar">
             <div className="side-bar-profile">
             <label htmlFor="side-bar-profile-photo">
-                            <img src="" alt="" id="input-files-img" onChange={changeUrl}/>
+                            <img src="./images/user-png-icon-young-user-icon-2400.png" alt="" id="input-files-img" onChange={changeUrl}/>
                         </label>
                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="side-bar-profile-photo" />
                 <div className="side-bar-name">Name of user</div>

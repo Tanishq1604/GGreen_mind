@@ -32,7 +32,12 @@ label{
     border-radius: 50%;
     box-shadow: 0 0 8px black;
     margin : 0.5rem;
+    z-index: 0;
     
+}
+label img{
+    z-index: 1;
+    height: 20000px;
 }
 #side-bar-profile-photo{
     display: none;
