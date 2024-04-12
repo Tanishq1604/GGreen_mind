@@ -5,7 +5,8 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import './sidebar.css';
 import './header.css';
-import './dashboard.css'
+import './dashboard.css';
+import './new.css';
 
 const root= createRoot(document.querySelector("#root"));
 
