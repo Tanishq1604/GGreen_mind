@@ -368,10 +368,4 @@ body {
     background-color: #F1EDF6;
   }
 
-  .inside-map{
-   font-size: 20px;
-   z-index: 2;
-   position: relative;
-   bottom: 40px;
-   left: 20px;
-  }
+  

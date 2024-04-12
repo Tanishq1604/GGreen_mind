@@ -34,7 +34,6 @@ return (
 <div  id="map"  style={styleMap}>
 
 </div>
-<i class="fa-solid fa-trash inside-map"></i>
 </div>
 );
 }
