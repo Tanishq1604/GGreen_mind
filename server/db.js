@@ -19,6 +19,7 @@ const userSchema = mongoose.Schema({
 
 const postSchema = mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  text : {type: String },
   Images: 
     {
       data: Buffer,
