@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const User = require("./db");
+const {User, Location, Post} = require("./db");
 const port = 4040;
 const paymentroute=require('./paymentroute.js')
 app.use(express.json());
@@ -188,3 +188,119 @@ app.listen(port, () => {
 
 
 // Handling POST request
+
+
+// creating a New post
+app.post('/create/post', async (req, res) => {
+  const post = {
+    userid: req.body.userid,
+    image: req.body.image,
+  };
+  console.log(post);
+
+      Post.create({
+        userId: post.userid,
+        Images: post.image
+      });
+});
+
+
+// Getting Post
+app.get('/post/:postId', async (req, res) => {
+  const postId = req.params.postId;
+
+  try {
+      const post = await Post.findById(postId);
+
+      if (!post) {
+          return res.status(404).json({ error: 'Post not found' });
+      }
+
+      // If the post is found, send it as JSON response
+      res.json(post);
+  } catch (error) {
+      // Handle any errors that occur during the database query
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Getting User
+app.get('/user/:userId', async (req, res) => {
+  const userId = req.params.userId;
+
+  try {
+      const user = await User.findById(userId);
+
+      if (!user) {
+          return res.status(404).json({ error: 'user not found' });
+      }
+
+      // If the user is found, send it as JSON response
+      res.json(user);
+  } catch (error) {
+      // Handle any errors that occur during the database query
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
+app.get('/posts', async (req, res) => {
+  try {
+      // Retrieve all posts from the database
+      const posts = await Post.find();
+
+      // Send the posts as JSON response
+      res.json(posts);
+  } catch (error) {
+      // Handle any errors that occur during the database query
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// get longitude and latitude
+app.get('/posts/lonlat', async (req, res) => {
+  
+    const user = {
+      long: req.body.long,
+      lat: req.body.lat,
+      userid: req.body.userid,
+    };
+    Location.create({
+      userId : userid,
+      longitude : long,
+      latitude : lat
+    });
+});
+
+
+
+// add karmapoints
+async function addkarma(num, userid){
+  const user = await findUserById(userid);
+  if(user){
+    user.karmaPoints += num;
+  }
+
+}
+
+// add karma for like
+
+app.get('/karma/like', (req, res) => {
+  // Access the user ID of the currently logged-in user
+  const userId = req.user._id;
+  
+  addkarma(1, userId);
+  
+});
+
+
+app.get('/karma/post', (req, res) => {
+  // Access the user ID of the currently logged-in user
+  const userId = req.user._id;
+  
+  addkarma(5, userId);
+  
+});
