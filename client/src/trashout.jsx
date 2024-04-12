@@ -1,3 +1,4 @@
+
 import { mappls } from  'mappls-web-maps';
 function  Trashout() {
 const  styleMap  = {width:  '60%', height:  '400px', display:'inline-block'}
@@ -21,6 +22,7 @@ var mapplsClassObject=  new  mappls();
       });
 
 	});
+
 
 
 

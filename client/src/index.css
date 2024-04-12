@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maitree:wght@200;300;400;500;600;700&family=Montaga&family=Oswald:wght@200..700&family=Poppins&family=Roboto:wght@300&family=Salsa&family=Tauri&family=Trade+Winds&display=swap'); */
@@ -40,8 +41,10 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-color:#f7f3f3;
+    /* background-color:#f7f3f3; */
     /* background: linear-gradient(45deg, #25690c, #45c517); */
+    background-color: #F1EDF6;
+    background-color: black;
 }
 #chk{
 	display: none;
@@ -78,12 +81,12 @@ body{
 }
 .main .signup form input{
 	width: 60%;
-	height: 20px;
+	height: 5px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
-	padding: 1.5rem;
+	padding: 1.2rem;
 	border: none;
 	outline: none;
 	border-radius: 5px;
@@ -359,3 +362,8 @@ body {
     font-size: 16px;
   }
  
+  .home-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #F1EDF6;
+  }
