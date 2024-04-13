@@ -8,6 +8,7 @@
     top: 40px;
     border-radius: 20px;
     border: none;
+    z-index: 1;
 }
 
 .side-bar .side-bar-profile{
@@ -83,7 +84,7 @@ label img{
     color: black;
 }
 
-.side-bar-btn{
+.side-bar-btn,.side-bar-upload-btn{
     font-size: 20px;
     font-weight: 600;
     color: black;
@@ -98,6 +99,15 @@ label img{
     justify-content: center;
 
 }
+.side-bar-upload-btn{
+    background-color: white;
+    border-radius: 10px;
+}
+.side-bar-upload-btn:hover{
+    background-color: black;
+    color: white;
+}
+
 .side-bar-btn:hover{
     background-color: black ;
     color: white;

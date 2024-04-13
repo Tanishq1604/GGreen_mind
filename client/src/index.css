@@ -367,5 +367,15 @@ body {
     width: 100%;
     background-color: #F1EDF6;
   }
+  .trashout{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  #longitude{
+    z-index: 1;
+    height: 20px;
+    transform: translate(-15rem,);
+  }
 
   

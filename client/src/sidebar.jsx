@@ -1,4 +1,4 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function changeUrl(){
     let input_file = document.getElementById("side-bar-profile-photo");
@@ -6,7 +6,10 @@ function changeUrl(){
     inputFilesIimg.src = URL.createObjectURL(input_file.files[0]);
 }
 
+
+
 export default function Sidebar(){
+    
     
     return(
         <div className="side-bar">
@@ -25,9 +28,7 @@ export default function Sidebar(){
                
             </div>
 
-            <div className="upload-post">
-                <button className="upload-post-btn">Upload</button>
-            </div>
+            <Link to="/new" className="side-bar-upload-btn"><div>Upload</div></Link>
         </div>
     )
 }
