@@ -64,7 +64,7 @@ export default function Dashboard() {
                 <i class="fa-solid fa-coins"></i>
               </span>
             </div>
-            <h1>8,731</h1>
+            <h1>2,925</h1>
           </div>
 
           <div class="card">

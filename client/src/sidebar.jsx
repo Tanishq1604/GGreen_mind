@@ -15,10 +15,10 @@ export default function Sidebar(){
         <div className="side-bar">
             <div className="side-bar-profile">
             <label htmlFor="side-bar-profile-photo">
-                            <img src="./images/user-png-icon-young-user-icon-2400.png" alt="" id="input-files-img" onChange={changeUrl}/>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6KqC6o3QC_Cqr9khlI-HDHVJPnWAViS8hGynHYIulA&s" alt="" id="input-files-img" onChange={changeUrl}/>
                         </label>
                 <input type="file" accept="image/jpeg, image/png, image/jpg" id="side-bar-profile-photo" />
-                <div className="side-bar-name">Name of user</div>
+                <div className="side-bar-name">NIJSO</div>
             </div>
             <div className="side-bar-options">
             <Link to="/dashboard" className="side-bar-btn"><i class="fa-solid fa-house"></i><div>Dashboard</div></Link>

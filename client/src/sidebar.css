@@ -38,7 +38,7 @@ label{
 }
 label img{
     z-index: 1;
-    height: 20000px;
+    height: 150px;
 }
 #side-bar-profile-photo{
     display: none;
@@ -58,7 +58,8 @@ label img{
 }
 .side-bar-name{
     color: black;
-    font-family: 'Montaga', serif; 
+    font-weight: bolder;
+     
 }
 .side-bar-options button{
     display: flex;

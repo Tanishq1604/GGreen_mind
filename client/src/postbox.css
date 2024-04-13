@@ -49,15 +49,15 @@ img{
     font-size: medium;
   }
    .donation:hover{
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 0px 0px 8px black;
 
   }
    .like:hover{
-    text-shadow: 2px 2px 8px black;
+    text-shadow:0px 0px 8px black;
 
   }
    .comment:hover{
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 0px 0px 8px black;
 
   }
   

@@ -3,6 +3,7 @@ import axios from "axios";
 import Sidebar from "./sidebar.jsx";
 import { FiUpload } from "react-icons/fi";
 import { Userdata, Postdata } from "../connector.js";
+import { Navigate } from 'react-router-dom';
 
 
 // export default function Postbox({ PostID }) {
@@ -24,6 +25,7 @@ export default function Upload() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    Navigate("/explore");
     // You can perform further actions like sending data to server here
     console.log('Text:', text);
     console.log('Image:', image);
@@ -36,13 +38,13 @@ export default function Upload() {
       <div className="mainbox">
         <div className="head">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6KqC6o3QC_Cqr9khlI-HDHVJPnWAViS8hGynHYIulA&s" alt="" />
-          <span className="Name">juwbe</span>
+          <span className="Name">Nijso</span>
         </div>
           <input
           className='textinput'
             type="text"
             id="text"
-            placeholder='Enter you Text fro post....'
+            placeholder='Enter you Text for post....'
             value={text}
             onChange={handleTextChange}
           />

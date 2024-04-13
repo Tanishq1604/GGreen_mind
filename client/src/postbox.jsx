@@ -52,7 +52,7 @@ export default function Postbox({ PostID }) {
       <div className="mainbox" style={{marginLeft:"0px"}}>
         <div className="head">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-6KqC6o3QC_Cqr9khlI-HDHVJPnWAViS8hGynHYIulA&s" alt="" />
-          <span className="Name">{userdata.name}</span>
+          <span className="Name">Nijso</span>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe repellat doloribus iure dolore sequi, nesciunt repudiandae est quis nulla nam officia ut hic cupiditate voluptates nemo voluptate, recusandae blanditiis?</p>
         <div className="image">
