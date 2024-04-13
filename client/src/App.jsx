@@ -7,8 +7,10 @@ import Trashout from "./trashout";
 import Explore from "./explore";
 import "./postbox.css"
 import "./explore.css"
+import "./karma.css"
 import New from "./new";
 import Upload  from "./upload.jsx";
+import Karma from './karma.jsx'
 
 
 
@@ -26,6 +28,8 @@ export default function App() {
       <Route path="/explore" element={<Home />} />
       <Route path="/new" element = {<New/>}/>
       <Route path="/upload" element = {<Upload/>}/>
+      <Route path="/karma" element = {<Karma/>}/>
+
     </Routes>
     
   

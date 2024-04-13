@@ -1,7 +1,10 @@
 import { useState } from "react"
 import axios from "axios";
+import { IoGift } from "react-icons/io5";
 import Sidebar from "./sidebar.jsx";
+import { useNavigate } from "react-router-dom";
 export default function Dashboard(){
+  const navigate=useNavigate();
 
     
     async function checkoutHandler(){
@@ -104,12 +107,15 @@ export default function Dashboard(){
             <h1>3,841</h1>
           </div>
 
-          <div class="card">
+          <div class="card" onClick={
+            navigate('/karma')
+            
+          }>
             <div class="card-inner">
-              <h2>COMMENTS</h2>
-              <span class="material-icons-outlined"><i class="fa-solid fa-comment"></i></span>
+              <h2>CLAIM REWARDS</h2>
+              <span class="material-icons-outlined"><IoGift /></span>
             </div>
-            <h1>1,962</h1>
+            <h1>2,925</h1>
           </div>
 
         </div>
