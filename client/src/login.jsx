@@ -36,7 +36,8 @@ export default function Login() {
      
          })
          .then((res) => {
-            if(res.data==="created"){
+            if(res.data!="alreadyexist"){
+              localStorage.setItem('userid', JSON.stringify(res.data));
               navigate( "/home");
             }
             else{
