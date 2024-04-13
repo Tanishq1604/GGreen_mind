@@ -1,5 +1,50 @@
-.dashboard-container{
-    background-color: red;
-    height: 100vh;
-    width: 20%;
+.mainbox{
+    border: solid black 2px;
+    padding: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    border-radius: 20px;
+
 }
+
+img{
+    height: 40px;
+    padding: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.uploadbox {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    align-items: center;
+    height: 10vw;
+    min-width: 240px;
+    min-height: 240px;
+    max-width: 40rem;
+    max-height: 40rem;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: dotted;
+    margin: 0.5rem;
+  }
+  
+  .uploadinfo {
+    text-align: center;
+  }
+
+  .bottom{
+    display: flex;
+  }
+  .like, .comment, .donation{
+    margin: 0px 20px;
+  }

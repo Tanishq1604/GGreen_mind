@@ -1,5 +1,9 @@
 .dashboard-container{
-    background-color: red;
     height: 100vh;
     width: 20%;
 }
+
+.scroll{
+    margin-left: 40vw;
+}
+

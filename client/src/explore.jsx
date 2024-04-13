@@ -40,6 +40,7 @@ export default function Explore() {
       <Sidebar />
       <div className="scroll">
         {console.log(fetchPosts())}
+        <Postbox/>
       </div>
     </>
   );

@@ -5,6 +5,8 @@ import Dashboard from "./dashboard";
 import Home from "./home";
 import Trashout from "./trashout";
 import Explore from "./explore";
+import "./postbox.css"
+import "./explore.css"
 
 
 

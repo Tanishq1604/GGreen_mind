@@ -22,9 +22,6 @@ app.use(
 
 
 
-
-
-
 //google auth--------------------------------------------------------------------------------------------------------------------------------
 
 app.use(
@@ -131,12 +128,12 @@ app.post("/signup", async (req, res) => {
     const data = await User.findOne({ email: user.email })
       if (!data) {
         const hashedpass = jwt.sign(user.password, process.env.JWT_PASS);
-        User.create({
+        const newUser = await User.create({
           name: user.name,
           email: user.email,
           password: hashedpass,
         });
-        res.send("created");
+        res.send(newUser._id);
       } else {
         res.send("alreadyexist");
       }
@@ -278,8 +275,8 @@ app.get('/posts/lonlat', async (req, res) => {
 
 
 // add karmapoints
-async function addkarma(num, userid){
-  const user = await findUserById(userid);
+async function addkarma(num, userID){
+  user = User.findOne(userID);
   if(user){
     user.karmaPoints += num;
   }
@@ -289,18 +286,12 @@ async function addkarma(num, userid){
 // add karma for like
 
 app.get('/karma/like', (req, res) => {
-  // Access the user ID of the currently logged-in user
-  const userId = req.user._id;
-  
-  addkarma(1, userId);
+  addkarma(1, req.data.userid);
   
 });
 
 
 app.get('/karma/post', (req, res) => {
-  // Access the user ID of the currently logged-in user
-  const userId = req.user._id;
-  
-  addkarma(5, userId);
+  addkarma(5, req.data.userid);
   
 });

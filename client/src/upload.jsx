@@ -7,8 +7,6 @@ import { Userdata, Postdata } from "../connector.js";
 
 // export default function Postbox({ PostID }) {
 export default function Postbox() {
-  // const postdata = Postdata(PostID);
-  // const userdata = Userdata(postdata.userId);
 
   return (
     <>
