@@ -8,6 +8,7 @@ import Explore from "./explore";
 import "./postbox.css"
 import "./explore.css"
 import New from "./new";
+import Upload  from "./upload.jsx";
 
 
 
@@ -24,6 +25,7 @@ export default function App() {
 
       <Route path="/explore" element={<Home />} />
       <Route path="/new" element = {<New/>}/>
+      <Route path="/upload" element = {<Upload/>}/>
     </Routes>
     
   

@@ -1,50 +1,87 @@
 .mainbox{
-  border: solid black 2px;
-  padding: 1rem;
-  background-color:white;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: fit-content;
-  border-radius: 20px;
+    margin: 1rem;
+    border: solid black 2px;
+    padding: 1rem;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    border-radius: 20px;
+    width: 600px;
+    margin-left: 40vw;
+
 
 }
 
 img{
-  height: 40px;
-  padding: 10px;
+    height: 40px;
+    padding: 10px;
 }
 
 .head{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
 .uploadbox {
-  display: flex;
-  flex-direction: column;
-  width: 10vw;
-  align-items: center;
-  height: 10vw;
-  min-width: 240px;
-  min-height: 240px;
-  max-width: 40rem;
-  max-height: 40rem;
-  justify-content: center;
-  border-radius: 20px;
-  border-style: dotted;
-  margin: 0.5rem;
-}
 
-.uploadinfo {
-  text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    align-items: center;
+    height: 10vw;
+    min-width: 240px;
+    min-height: 240px;
+    max-width: 40rem;
+    max-height: 40rem;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: dotted;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+  
+  .uploadinfo {
+    text-align: center;
+  }
 
-.bottom{
-  display: flex;
-}
-.like, .comment, .donation{
-  margin: 0px 20px;
-}
+  .textinput{
+    all: unset;
+    height: 100px;
+
+
+  }
+
+  .button{
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: larger;
+    
+    
+
+  }
+   
+  .button:hover{
+    box-shadow: 2px 2px black;
+  }
+
+
+  .imageinput{
+    all: unset;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+  }
+  .like, .comment, .donation{
+    margin: 0px 20px;
+  }

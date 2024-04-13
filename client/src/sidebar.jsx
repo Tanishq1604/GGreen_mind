@@ -28,7 +28,7 @@ export default function Sidebar(){
                
             </div>
 
-            <Link to="/new" className="side-bar-upload-btn"><div>Upload</div></Link>
+            <Link to="/upload" className="side-bar-upload-btn"><div>Upload</div></Link>
         </div>
     )
 }
