@@ -9,6 +9,7 @@
     width: fit-content;
     border-radius: 20px;
     width: 600px;
+    margin-left: 0;
 
 }
 
@@ -39,9 +40,13 @@ img{
     margin-top: 20px;
   }
   .like, .comment, .donation{
-    margin: 0px 20px;
+    margin: 0px 40px;
     font-weight: bold;
-
+  }
+  .donation{
+    background-color: transparent;
+    border: none;
+    font-size: medium;
   }
    .donation:hover{
     text-shadow: 2px 2px 8px black;
