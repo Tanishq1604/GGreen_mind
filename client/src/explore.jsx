@@ -41,6 +41,9 @@ export default function Explore() {
       <div className="scroll">
         {console.log(fetchPosts())}
         <Postbox/>
+        <Postbox/>
+        <Postbox/>
+        <Postbox />
       </div>
     </>
   );

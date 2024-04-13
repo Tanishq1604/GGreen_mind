@@ -7,7 +7,8 @@
     overflow-y: auto;
     padding: 20px 20px;
     width: 65%;
-    transform: translate(27rem,-1.6rem);
+    margin-top: 40px;
+    transform: translate(27rem);
     background-color: #d8ddd6;
     border-radius: 20px;
     

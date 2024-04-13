@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import './sidebar.css';
 import './header.css';
 import './dashboard.css';
-import './new.css';
+import './upload.css';
 
 const root= createRoot(document.querySelector("#root"));
 
