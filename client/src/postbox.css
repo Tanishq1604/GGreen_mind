@@ -40,4 +40,19 @@ img{
   }
   .like, .comment, .donation{
     margin: 0px 20px;
+    font-weight: bold;
+
   }
+   .donation:hover{
+    text-shadow: 2px 2px 8px black;
+
+  }
+   .like:hover{
+    text-shadow: 2px 2px 8px black;
+
+  }
+   .comment:hover{
+    text-shadow: 2px 2px 8px black;
+
+  }
+  
